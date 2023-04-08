@@ -1,0 +1,1 @@
+1. token.txt : serviceAccountKey의 service-account.json의 경로를 재설정 해야한다.
