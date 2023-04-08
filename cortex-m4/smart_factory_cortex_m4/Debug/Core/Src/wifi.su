@@ -1,0 +1,5 @@
+../Core/Src/wifi.c:24:5:WIFI_init	16	static
+../Core/Src/wifi.c:52:5:connectWiFi	64	static
+../Core/Src/wifi.c:65:5:wifi_send_cmd	32	static
+../Core/Src/wifi.c:89:5:wifi_wait	48	static
+../Core/Src/wifi.c:130:5:WIFI_send	216	static
