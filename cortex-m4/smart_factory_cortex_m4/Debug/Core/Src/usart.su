@@ -1,0 +1,9 @@
+../Core/Src/usart.c:37:6:MX_USART2_UART_Init	8	static
+../Core/Src/usart.c:66:6:MX_USART3_UART_Init	8	static
+../Core/Src/usart.c:94:6:HAL_UART_MspInit	56	static
+../Core/Src/usart.c:162:6:HAL_UART_MspDeInit	16	static
+../Core/Src/usart.c:211:6:Serial2_Send	16	static
+../Core/Src/usart.c:216:6:Serial3_Send	16	static
+../Core/Src/usart.c:221:6:Serial2_Send_String	16	static
+../Core/Src/usart.c:230:6:Serial3_Send_String	16	static
+../Core/Src/usart.c:239:6:HAL_UART_RxCpltCallback	16	static

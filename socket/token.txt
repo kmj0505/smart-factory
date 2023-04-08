@@ -1,0 +1,3 @@
+serviceAccountKey /home/iot03/Smart_Factory/service-account.json
+projectId smartfactory-63
+token c3kk4PwlSQSAUEybFtU5xA:APA91bHm_jlJHZBBsjUfm0lIjluXk-ApVOllW8k_ujbs44BRl27ocpgX5Sz6YX-FcYJy-iS_kGrqhfSv-Wer1RZanCiK4Oy9So005lRBnQben-5KHsgoB9oTIdNBIoUQQMQwEkJrRr8q
