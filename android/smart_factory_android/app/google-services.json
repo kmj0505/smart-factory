@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "985841374097",
+    "project_id": "smartfactory-63",
+    "storage_bucket": "smartfactory-63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985841374097:android:310f18d08b850050158030",
+        "android_client_info": {
+          "package_name": "net.kcci.SmartFactory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985841374097-uhoc3mtuahdk25kuva5llktdvtikl1c3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD--tMf72Kozh7FXutDxlxQ3qHvNfIN_mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985841374097-uhoc3mtuahdk25kuva5llktdvtikl1c3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
