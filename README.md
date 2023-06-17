@@ -33,23 +33,28 @@
 
 ## Conveyor Belt Control 시스템 구성
 <p align="center"><img src="https://github.com/kmj0505/smart-farm-project/assets/123744547/df189fd3-29cf-4c31-81c8-90432de27583"></p>
+
 - Arduino Mega에 적외선 센서로 컨베이어 벨트 위의 제품을 인지하고, 릴레이 모듈을 사용하여 컨베이어 벨트의 On/Off를 제어할 수 있게 구현하였다. Jetson 보드와 연결된 카메라에서 제품명(QR코드)을 인식하면 Arduino에 정보를 전달하여 LCD 모듈에서 제품명을 출력한다. STM32 보드와 연결된 서보모터를 제품명에 따라 설정한 각도로 조절하여 자동적으로 분류할 수 있게 구현하였다.
 
 ## Android UI Interface 구성
 <p align="center"><img src="https://github.com/kmj0505/smart-farm-project/assets/123744547/fc7cb5f5-a384-4f35-b195-7eb8bac9b9fa"></p>
+
 - 컨베이어 벨트의 실시간 제어와 제품의 재고 현황을 파악하기 위해 Android Studio를 이용해 Application을 제작하였다. Main 서버에 Client로 접속할 수 있게 로그인 창을 제작하였고, 재고 최신화 버튼을 통해 실시간으로 분류되고 적재된 제품들의 수량을 파악할 수 있다. 또한, 컨베이어 벨트 제어 스위치를 이용해 실시간으로 컨베이어 벨트의 제어가 가능하다.
 
 ## Database 구축 및 시각화
 ### 1) Maria DB
 <p align="center"><img src="https://github.com/kmj0505/smart-farm-project/assets/123744547/0333597e-8663-439f-8bf5-ea9d55d1bf62"></p>
+
 - 분류한 제품을 제품명에 따라 수량과 목표 진행률을 업데이트하는 Database를 구축하였다. 목표 진행률은 ’분류한 제품 수량(Count)*100/목표 수량(Goal)‘ 으로 값을 설정하여 나타냈다.
 
 ### 2) PHP
 <p align="center"><img src="https://github.com/kmj0505/smart-farm-project/assets/123744547/623241c8-d876-4c49-b409-1659a3826478"></p>
+
 - Maria DB에 저장된 Database를 Web Server에서 테이블 PHP, 그래프 PHP를 사용하여 실시간 재고 현황을 시각화된 자료로 제작하였다.
 
 ### Android Firebase FCM 제작
 <p align="center"><img src="https://github.com/kmj0505/smart-farm-project/assets/123744547/aae14a71-7747-4756-9c4b-78e812784991"></p>
+
 - QR코드를 인식해서 불량품이라고 가정한 ‘Product X’를 발견하면 Arduino에서 Android로 “[FCM]DEV@FIND@X” 메시지를 보낸다.
 - Android는 받은 메시지 중 “FIND”가 포함되어있으면 불량품으로 인식해 “[Title : Smart Factory, Body : 물건의 이름]”의 형식으로 FCM을 보낸다.
 - Application 내에서는 토스트 알림으로 “불량품이 발견되었습니다.” 메시지를 수신받아 불량품 여부를 실시간으로 확인할 수 있다.
